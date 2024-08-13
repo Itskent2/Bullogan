@@ -76,7 +76,7 @@ h1 {
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 958px) {
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -88,7 +88,7 @@ h1 {
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 600px){
 
     .checkbtn{
         display: block;
