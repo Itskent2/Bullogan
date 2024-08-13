@@ -76,7 +76,7 @@ h1 {
 }
 
 
-@media (max-width: 952px) {
+@media (max-width: 300px) {
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -88,7 +88,7 @@ h1 {
     }
 }
 
-@media (max-width: 858px){
+@media (max-width: 300px){
 
     .checkbtn{
         display: block;
@@ -101,6 +101,7 @@ h1 {
         left: -100%;
         text-align: center;
         transition: all .5s;
+
     }
     nav ul li {
         display: block;
