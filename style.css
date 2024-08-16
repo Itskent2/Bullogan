@@ -78,7 +78,7 @@ h1 {
 
 @media (max-width: 958px) {
     label.logo{
-        font-size: 30px;
+        font-size: 15px;
         padding-left: 0px;
     }
 
@@ -95,7 +95,7 @@ h1 {
     }
     ul{
         position: fixed;
-        width: 80vh;
+        width: 50vh;
         background: #097c47;
         top: 80px;
         left: -200%;
