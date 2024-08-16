@@ -79,7 +79,7 @@ h1 {
 @media (max-width: 985px) {
     label.logo{
         font-size: 15px;
-        padding-left: 0px;
+        padding-left: 30px;
     }
 
     nav ul li a{

@@ -79,7 +79,7 @@ h1 {
 @media (max-width: 958px) {
     label.logo{
         font-size: 15px;
-        padding-left: 0px;
+        padding-left: 30px;
     }
 
     nav ul li a{
@@ -176,6 +176,8 @@ h1 {
 }
 
 
+
+
 @media (max-width: 800px) {
     .story {
         font-size: 20px;
@@ -201,6 +203,8 @@ h1 {
     
 }
 
+
+
 .purok{
 
     font-size: 50px;
@@ -209,6 +213,16 @@ h1 {
     padding: 100px;
 }
 
+@media (max-width: 800px){
+
+    .purok{
+        font-size: 30px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+
+}
   
 div.gallery-container {
     display: flex;
