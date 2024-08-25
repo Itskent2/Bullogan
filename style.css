@@ -86,7 +86,12 @@ h1 {
         font-size: 16px;
 
     }
+    .checkbtn{
+        display: none; /* Hide hamburger menu in desktop mode */
+    }
 }
+
+
 
 @media (max-width: 800px){
 
@@ -121,6 +126,9 @@ h1 {
         left: 0;
     }
 }
+
+
+
 
 .container {
     display: flex;
