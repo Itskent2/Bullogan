@@ -88,8 +88,6 @@ h1 {
     }
     .checkbtn{
         display: none; /* Hide hamburger menu in desktop mode */
-        font-size: 8px;
-        line-height: 10px;
     }
 }
 
