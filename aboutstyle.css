@@ -205,40 +205,61 @@ h2 {
     color: white;
 }
 
-/* Media Query for Smaller Screens */
-@media (max-width: 800px) {
-    h2 {
-        font-size: 30px;
-        text-align: center;
-        margin-top: -100px;
+@media only screen and (max-width: 768px) {
+    /* For mobile phones */
+  
+    /* Adjust the h2 element */
+    h2.h2 {
+      font-size: 1.5em; /* Smaller font size for mobile screens */
+      margin-top: -10px; /* Adjust margin as needed */
+      padding: 10px; /* Add padding to ensure text isn't too close to the edges */
     }
+  
+    /* Adjust table headers and data cells */
+    #barangay {
+      width: 400px; /* Make table width 100% on mobile screens */
+      height: 450px;
+      margin: 0; /* Remove margin to fit the screen better */
+      border-collapse: collapse; /* Ensure proper spacing between table cells */
+      margin-left: 50px;
+      margin-top: -150px;
+    }
+  
+    #barangay th, #barangay td {
+      padding: 10px; /* Increase padding for better readability */
+      font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+  
+    /* Adjust parent and flex container */
 
-    .parent-container {
-        font-size: 10px;
-        margin-right: 10px;
-        margin-top: 100px;
+    .parent-container{
+      width: 100%;  
+      position: center;
+      margin-left: -15px;
     }
+    .flex-container {
+      flex-direction: column; /* Stack children vertically */
+      align-items: center; /* Center items horizontally */
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .flex-container > div {
+      width: 90%; /* Adjust width to fit content on smaller screens */
+      margin: 10px 0; /* Add vertical margin */
+    }
+  
+    /* Adjust barangay-image */
 
-    .flex-container.move-down p {
-        font-size: 14px; /* Adjust the size as needed */
-        margin-left: 100px;
-    }
+  
+  .barangay-image {
+    width: 450px !important; /* Force the width to 100% to override any existing styles */
+    height: auto !important; /* Maintain aspect ratio */
+    display: block; /* Ensure it displays as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Prevent it from exceeding the container width */
+    /* Remove left margin if it was previously set */
+    top: 350px;
+    left: -180px;
+  }
 
-    .parent-container {
-        display: flex;
-        justify-content: center;  /* Center horizontally */
-        align-items: center;      /* Center vertically */
-        flex-direction: column;   /* Stack children vertically */
-        text-align: center;       /* Center text within the container */
-        width: 100%;              /* Ensure the container takes the full width */
-        height: auto;             /* Adjust height automatically based on content */
-        margin: 0 auto;           /* Center horizontally */
-    }
-
-    .barangay-image {
-        width: 450px; /* Makes the image take up the full width of its container */
-        height: 450px; /* Ensures the image maintains its aspect ratio */
-        margin-left: 50px;
-        margin-top: 200px;
-    }
 }
