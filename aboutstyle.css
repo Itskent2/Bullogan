@@ -86,9 +86,12 @@ h1 {
         font-size: 16px;
 
     }
+    .checkbtn{
+        display: none;/* Hide hamburger menu in desktop mode */
+    }
 }
 
-@media (max-width: 800px){
+@media (max-width: 1400px){
 
     .checkbtn{
         display: block;
@@ -125,25 +128,20 @@ h1 {
 
 
 
-
-
-
-div {
-    position: relative;
-}
-
 img {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 400px;
 }
 
 h2 {
-    position: absolute;
-    top: 50%;  /* Center vertically */
+    position: relative;
+    top: 150px;  /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust to center the text */
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: black;
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
@@ -151,23 +149,99 @@ h2 {
     z-index: 1;
 }
 
-@media screen and (max-width: 1024px){
+.parent-container {
+    display: flex;
+    justify-content: flex-end; /* Align container to the right */
+    align-items: flex-start; /* Align container to the top */
+    height: 100vh; /* Full height of the viewport for demonstration */
+    padding: 20px; /* Add padding if needed */
+    margin-right:300px;
+    margin-top: 40px;
+}
 
-    h2{
-        padding: 50px;
-        height: 100px;
-        font-size: 20px;
-        top: 50%;
-    }
-    
-    img{
-        position: fixed;
-    }
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 0px; /* Optional: add padding inside the flex container */
+}
+
+.flex-container > div {
+    background-color: white;
+    width: 600px;
+    margin: 7px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.move-down {
+    margin-top: 120px; /* Adjust the vertical position as needed */
+    margin: 10px;
 }
 
 
+#barangay{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 32%;
+    margin-top: -700px;
+    margin-left: 970px;
+    
+}
+
+#barangay td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #barangay tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #barangay tr:hover {background-color: #ddd;}
+  
+  #barangay th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
 
 
-@media screen and (max-width: 600px){
+  @media (max-width: 800px){
 
+    .h2{
+        font-size: 30px;
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .parent-container {
+        font-size: 10px;
+        margin-right: 10px;
+        margin-top: 100px;
+    }
+    .flex-container.move-down p {
+        font-size: 14px; /* Adjust the size as needed */
+        margin-left: 100px;
+    }
+
+    .parent-container{
+        display: flex;
+        justify-content: center;  /* Center horizontally */
+        align-items: center;      /* Center vertically */
+        flex-direction: column;   /* Stack children vertically */
+        text-align: center;       /* Center text within the container */
+        width: 100%;              /* Ensure the container takes the full width */
+        height: auto;             /* Adjust height automatically based on content */
+        margin: 0 auto;           /* Center horizontally */
+    
+    }
+    
+    .barangay-image {
+        width: 450px; /* Makes the image take up the full width of its container */
+        height: 450px; /* Ensures the image maintains its aspect ratio */
+        margin-left: 50px;
+        margin-top: 200px;
+    }
 }
