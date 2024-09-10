@@ -75,7 +75,6 @@ h1 {
     display: none;
 }
 
-
 @media (max-width: 958px) {
     label.logo{
         font-size: 15px;
@@ -87,11 +86,9 @@ h1 {
 
     }
     .checkbtn{
-        display: none; /* Hide hamburger menu in desktop mode */
+        display: none;/* Hide hamburger menu in desktop mode */
     }
 }
-
-
 
 @media (max-width: 1400px){
 
@@ -106,7 +103,7 @@ h1 {
         left: -200%;
         text-align: center;
         transition: all .5s;
-
+        z-index: 1000;
     }
     nav ul li {
         display: block;
