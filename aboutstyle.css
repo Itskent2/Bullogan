@@ -205,6 +205,55 @@ h2 {
     color: white;
 }
 
+h3 {
+    font-size: 30px; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold like a header */
+    padding-bottom: 5px; /* Space between text and underline */
+    display: inline-block; /* Keep the underline inline with the text */
+    position: relative; /* Position the pseudo-element relative to this */
+    margin-left: 150px;
+}
+
+h3.location::after {
+    content: ""; /* No text, just the line */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1100%; /* Extend the underline length */
+    border-bottom: 2px solid black; /* Underline thickness and color */
+    /* Remove or adjust the transform */
+}
+
+.container {
+    width: 80%; /* Adjust the container's width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #ffffff; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    
+}
+
+.description {
+    text-align: justify; /* Justifies the text evenly */
+    line-height: 1.6; /* Adjusts the line height for better readability */
+    margin: 0; /* Remove default margin from the paragraph */
+}
+
+.map {
+    margin-left: 400px;
+    margin-bottom: 30px;
+}
+
+footer {
+    width: -100px; /* Make the footer span the full width of the container */
+    background-color: #097c47; /* Keep the background color */
+    color: white; /* Keep the text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding to increase the size of the footer */
+    position: relative; /* Use relative positioning to remove fixed positioning */
+}
+
+
 @media only screen and (max-width: 1400px) {
     /* For mobile phones */
   
